@@ -12,7 +12,7 @@ defmodule WhateverWeb.Router do
   scope "/api", WhateverWeb do
     pipe_through :api
 
-    get "/types", TypeController, :index
+    get "/dataTypes", TypeController, :index
   end
 
   if Mix.env() in [:dev, :test] do
