@@ -5,3 +5,13 @@ alias Whatever.Types.Type
   name: "web-search"
 }
 |> Repo.insert!()
+
+%Type{
+  name: "songs"
+}
+|> Repo.insert!()
+
+%Type{
+  name: "food"
+}
+|> Repo.insert!()

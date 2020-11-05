@@ -18,7 +18,7 @@ defmodule Whatever.Types do
 
   """
   def list_types do
-    Repo.all(Type)
+    Repo.all(from t in Type, order_by: [asc: t.name])
   end
 
   @doc """
